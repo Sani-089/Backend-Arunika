@@ -1,0 +1,30 @@
+GET http://localhost:3000/notes
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "title": "notes",
+    "note" : "ini notes pertama"
+}
+
+###
+
+GET http://localhost:3000/notes/2
+Content-Type: application/json
+
+### 
+PUT  http://localhost:3000/notes/2
+Content-Type: application/json
+
+{
+    "title": "notes baru",
+    "note": "note ini baru"
+}
+
+###
+DELETE  http://localhost:3000/notes/2
+Content-Type: application/json
